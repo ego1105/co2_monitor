@@ -21,7 +21,18 @@ und einer CO<sub>2</sub> Ampel mit roter, gelber und grüner Leuchtdiode.
   * Serial Port aktivieren für CO2 Sensor https://github.com/UedaTakeyuki/mh-z19/wiki/How-to-Enable-Serial-Port-hardware-on-the-Raspberry-Pi
   * Finish und Reboot, dann bei neuem Hostname neu verbinden
 
-  
+* Python3 Pakete installieren
+  ````sh
+  sudo apt install python3-pip python3-pil python3-pandas python3-matplotlib
+  ````
+* pip installieren und Python3 Tools upgraden
+  ````sh
+  sudo python3 -m pip install --upgrade pip setuptools wheel
+  ````  
+* Python3 Pakete installieren
+  ````sh
+  sudo pip3 install RPi.GPIO spidev Adafruit_DHT mh-z19
+  ````    
   
   
   
