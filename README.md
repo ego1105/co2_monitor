@@ -5,7 +5,7 @@ Einfacher Datenlogger für CO<sub>2</sub>, Temperatur und Feuchtigkeit mit den S
 * MH-Z19B https://pypi.org/project/mh-z19/
 * DHT22 https://www.einplatinencomputer.com/raspberry-pi-temperatur-und-luftfeuchtigkeitssensor-dht22/
 
-einem schwarz/rot E-Paper Display,
+einem schwarz-rotem E-Paper Display,
 * https://www.waveshare.com/wiki/2.13inch_e-Paper_HAT_(B)
 
 und einer CO<sub>2</sub> Ampel mit roter, gelber und grüner Leuchtdiode.
