@@ -39,5 +39,12 @@ und einer CO<sub>2</sub> Ampel mit roter, gelber und grüner Leuchtdiode.
   cd e-Paper/RaspberryPi\&JetsonNano/
   sudo python3 setup.py install
   ````
-  
+* Unterordner "devel" erstellen und dieses Repository mit git klonen
+  ````sh  
+  cd ~
+  mkdir devel
+  cd devel
+  git clone https://github.com/ego1105/co2_monitor.git  
+  ````
+
   
