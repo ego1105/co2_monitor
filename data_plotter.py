@@ -66,7 +66,7 @@ def creat_table_plot( table, w, h, dpi):
         ax.label_outer()
         ax.autoscale(enable=True, axis='both', tight=True)
         ax.grid(True, 'both', 'both')        
-        #ax.set_frame_on(False)
+        ax.set_frame_on(False)
         ax.spines["top"].set_visible(False)
         ax.spines["right"].set_visible(False)
 
@@ -93,7 +93,7 @@ def fig2img(plt):
 try:
     logging.basicConfig(level=logging.INFO)
     logger = logging.getLogger()
-    #logger.disabled = True
+    logger.disabled = True
 
     logging.info("starting e-paper data logger")
     
