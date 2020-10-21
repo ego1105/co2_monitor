@@ -46,5 +46,11 @@ und einer CO<sub>2</sub> Ampel mit roter, gelber und grüner Leuchtdiode.
   cd devel
   git clone https://github.com/ego1105/co2_monitor.git  
   ````
+* Cronjob erstellen, der co2_monitor.sh jede Minute aufruft
+  ````sh  
+  crontab -e
+  # m h  dom mon dow   command
+  * * * * * /home/pi/devel/co2_monitor/co2_monitor.sh
+  ````    
 
   
