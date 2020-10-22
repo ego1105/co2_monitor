@@ -10,7 +10,7 @@ einem schwarz-rotem E-Paper Display,
 
 und einer CO<sub>2</sub> Ampel mit roter, gelber und grüner Leuchtdiode.
 
-![CO2 Monitor](https://photos.app.goo.gl/uB4HTy3eFcbwRvi89)
+![CO2 Monitor](/doc/PXL_20201019_083823494.jpg)
 
 
 ## Installationsschritte
