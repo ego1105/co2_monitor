@@ -14,9 +14,11 @@ und einer CO<sub>2</sub> Ampel mit roter, gelber und grüner Leuchtdiode.
 ![CO2 Monitor](doc/PXL_20201019_083823494.jpg)
 
 Das Display zeigt jede Minute mit drei Kurven die Temperatur, Luftfeuchte und CO<sub>2</sub> Konzentration der letzten maximal 8 Stunden an:
+
 ![Beispiel e-Paper Display](doc/sample_data_plot.png)
 
 Eine detailiertere Darstellung der Messdaten kann mit `analyse_data.py` erstellt werden:
+
 ![Beispiel Analyse](doc/sample_analysis_plot.png)
 
 Basierend auf dem letzten CO<sub>2</sub>-Wert wird die Ampelfarbe umgeschaltet:
