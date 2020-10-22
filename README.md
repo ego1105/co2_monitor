@@ -10,6 +10,8 @@ einem schwarz-rotem E-Paper Display,
 
 und einer CO<sub>2</sub> Ampel mit roter, gelber und grüner Leuchtdiode.
 
+(https://photos.app.goo.gl/uB4HTy3eFcbwRvi89)
+
 
 ## Installationsschritte
 * [Raspberry Pi OS lite ohne Monitor und Tastatus headless einrichten](https://www.tutonaut.de/anleitung-raspberry-pi-ohne-monitor-und-tastatur-headless-einrichten/)
