@@ -1,13 +1,13 @@
-# CO<sub>2</sub>-, Temperatur- und Feuchtigkeitmonitor
+# CO<sub>2</sub>-, Temperatur- und Luftfeuchtigkeitsmonitor
 von Gero und Maik Brinkmeier, Oktober 2020
 
 ## Einleitung
 Raspberry Pi Datenlogger im Lego-Gehäuse für CO<sub>2</sub>, Temperatur und Luftfeuchtigkeit mit den Sensoren
-* MH-Z19B https://pypi.org/project/mh-z19/
-* DHT22/AM2302 https://www.einplatinencomputer.com/raspberry-pi-temperatur-und-luftfeuchtigkeitssensor-dht22/
+* MH-Z19B https://pypi.org/project/mh-z19/,
+* DHT22/AM2302 https://www.einplatinencomputer.com/raspberry-pi-temperatur-und-luftfeuchtigkeitssensor-dht22/,
 
 einem schwarz-rotem E-Paper Display,
-* https://www.waveshare.com/wiki/2.13inch_e-Paper_HAT_(B)
+* https://www.waveshare.com/wiki/2.13inch_e-Paper_HAT_(B),
 
 und einer CO<sub>2</sub> Ampel mit roter, gelber und grüner Leuchtdiode.
 
