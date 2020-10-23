@@ -81,7 +81,13 @@ Siehe auch: [Bekanntmachung des Umweltbundesamtes zu Kohlendioxid in der Innenra
   # m h  dom mon dow   command
   * * * * * /home/pi/devel/co2_monitor/co2_monitor.sh
   ````    
-
+* Cronjob für root erstellen, der den aktuellen Zeitstempel in jeder Minute für `fake-hwclock` speichert
+  ````sh  
+  sudo crontab -e
+  # m h  dom mon dow   command
+  * * * * * /sbin/fake-hwclock save
+  ````    
+  Wenn der Raspberry ohne Netzwerkverbindung läuft, bekommt er keine Zeitinfo vom NTP-Server und benutzt eine "fake hardware clock." Diese wird voreingestellt stündlich gespeichert, was z.B. bei Stromausfall zu Problemen mit den gespeicherten Zeitstempeln der Messdaten führen kann.
   
 ## Weitere Bilder
 
