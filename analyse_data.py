@@ -21,7 +21,7 @@ fig, axs = plt.subplots( figsize=( 12, 8), dpi=100,
     nrows=3, sharex=True, gridspec_kw={'hspace': 0, 'wspace': 0})
 
 # outlier removal
-table2 = table
+table2 = table.sort_index()
 Q1 = table2.quantile(0.03)
 Q3 = table2.quantile(0.97)
 IQR = Q3 - Q1
@@ -37,9 +37,13 @@ for ax in fig.get_axes():
 
 plt.savefig("analysis_plot.png")
 
-table3 = table2.rolling( 3).mean()
+table3 = table2
+table3.index = ( table3.index - table3.index[-1] ) / pd.Timedelta(hours=1)
+if len(table3.index) > 2:
+    table3 = table3.rolling( 3).mean()
 print( table3.tail(10) )
 print( table3.describe() )
+
 
 fig, axs = plt.subplots( figsize=( 12, 8), dpi=100, 
     nrows=3, sharex=True, gridspec_kw={'hspace': 0, 'wspace': 0})

@@ -46,6 +46,7 @@ try:
     with open(file_name, 'a') as data_log:
         logwriter = csv.writer(data_log)
         logwriter.writerow(new_log)
+        data_log.flush()
 
 except IOError as e:
     print(e)

@@ -15,6 +15,7 @@ def read_data_table( file_name):
     window_hours = 8
     dt = 60
     num_lines = window_hours * dt    
+    table = table.sort_index()
     table = table.tail(num_lines)
 
     # outlier removal
@@ -28,8 +29,11 @@ def read_data_table( file_name):
     table3 = table2.copy()    
     # convert datetime index to elapsed hours
     table3.index = ( table3.index - table3.index[-1] ) / pd.Timedelta(hours=1)
-    # time window and rolling mean
-    table3 = table3[-window_hours:0].rolling( 3).mean()    
+    # rolling mean
+    if len(table3.index) > 2:
+        table3 = table3.rolling( 3).mean()
+    # time window
+    table3 = table3[-window_hours:0]
     return table3
 
 
