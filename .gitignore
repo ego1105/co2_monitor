@@ -1,3 +1,5 @@
+*.gz
+*.log
 ampel.log
 data_logger.log
 data_plotter.log

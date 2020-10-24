@@ -39,7 +39,7 @@ plt.savefig("analysis_plot.png")
 
 table3 = table2
 table3.index = ( table3.index - table3.index[-1] ) / pd.Timedelta(hours=1)
-if len(table3.index) > 2:
+if len(table3.index) > 5:
     table3 = table3.rolling( 3).mean()
 print( table3.tail(10) )
 print( table3.describe() )

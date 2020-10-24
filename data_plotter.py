@@ -30,7 +30,7 @@ def read_data_table( file_name):
     # convert datetime index to elapsed hours
     table3.index = ( table3.index - table3.index[-1] ) / pd.Timedelta(hours=1)
     # rolling mean
-    if len(table3.index) > 2:
+    if len(table3.index) > 5:
         table3 = table3.rolling( 3).mean()
     # time window
     table3 = table3[-window_hours:0]
@@ -59,17 +59,19 @@ def creat_table_plot( table, w, h, dpi):
     
     # plot table data
     table.plot( ax=axs, subplots=True, style='r-')
-    plt.tick_params(
-        axis='x',          # changes apply to the x-axis
-        which='both',      # both major and minor ticks are affected
-        bottom=False,      # ticks along the bottom edge are off
-        top=False,         # ticks along the top edge are off
-        labelbottom=False) # labels along the bottom edge are off
     plt.xlabel('')
     for ax in fig.get_axes():
+        ax.tick_params(
+            axis='both',      
+            which='both',     
+            bottom=False,      
+            top=False,        
+            left=False,
+            right=False,
+            labelbottom=False)  
         ax.label_outer()
         ax.autoscale(enable=True, axis='both', tight=True)
-        ax.grid(True, 'both', 'both')        
+        ax.grid(True, 'both', 'both')       
         ax.set_frame_on(False)
         ax.spines["top"].set_visible(False)
         ax.spines["right"].set_visible(False)
