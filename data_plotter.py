@@ -54,7 +54,7 @@ def creat_table_plot( table, w, h, dpi):
 
     # create figure and axis layout
     fig, axs=plt.subplots( figsize=( w/dpi, h/dpi), dpi=dpi, 
-        nrows=3, sharex=True, gridspec_kw={'hspace': 0, 'wspace': 0})
+        nrows=3, sharex=True, gridspec_kw={'hspace': 0.05, 'wspace': 0})
     fig.subplots_adjust(top=1, bottom=0.15, left=0.18, right=0.93)
     
     # plot table data
